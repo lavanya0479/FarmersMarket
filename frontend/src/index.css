@@ -1,0 +1,68 @@
+/* General App Container */
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  background-color: #f4f4f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Login Buttons Container */
+.login-buttons {
+  margin-top: 20px;
+}
+
+/* Button Styling */
+.login-btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+/* Login Form Styling */
+.login-form {
+  margin-top: 20px;
+}
+
+.login-form input {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
