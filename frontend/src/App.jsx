@@ -6,7 +6,7 @@ import FarmerLogin from "./pages/farmers/FarmerLogin.jsx";   // Farmer login pag
 import FarmerReg from "./pages/farmers/FarmerReg.jsx";   // Farmer registration page
 import AdminLogin from "./pages/admin/AdminLogin.jsx";   // Admin login page
 import Home from "./pages/Home.jsx"; // Home page
-import "./App.css";
+
 
 const App = () => {
   return (

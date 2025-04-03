@@ -3,17 +3,18 @@ import { Link,BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="home-container">
-      <h1>Welcome to the FBA</h1>
-      <div className="button-group">
+    <div className="home-containerr">
+      <h1>Welcome to FBA</h1>
+      <p className="subtitlee">Connecting Farmers and Consumers Directly</p>
+      <div className="button-groupp">
         {/* Consumer Login Button */}
         <Link to="/consumer-login">
-          <button className="role-button">Consumer </button>
+          <button className="role-buttonn">Consumer </button>
         </Link>
 
         {/* Farmer Login Button */}
         <Link to="/farmer-login">
-          <button className="role-button">Farmer </button>
+          <button className="role-buttonn">Farmer </button>
         </Link>
 
         {/* Admin Login Button */}
