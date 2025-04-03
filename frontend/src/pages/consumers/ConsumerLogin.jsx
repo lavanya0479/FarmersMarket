@@ -64,39 +64,47 @@ const ConsumerLogin = () => {
             </p>
           </form>
         ) : (
-          <div className="app-container">
-            <h3>Reset Password</h3>
-            {!isOtpVerified ? (
-              <>
-                <input
-                  type="text"
-                  placeholder="Enter OTP"
-                  value={enteredOtp}
-                  onChange={(e) => setEnteredOtp(e.target.value)}
-                  required
-                />
-                <button onClick={handleOtpSubmit}>Verify OTP</button>
-              </>
-            ) : (
-              <>
-                <input
-                  type="password"
-                  placeholder="New Password"
-                  value={newPassword}
-                  onChange={(e) => setNewPassword(e.target.value)}
-                  required
-                />
-                <input
-                  type="password"
-                  placeholder="Confirm Password"
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  required
-                />
-                <button onClick={handleResetPassword}>Reset Password</button>
-              </>
-            )}
-          </div>
+          <div className="reset-container">
+  <h3 className="reset-title">Reset Password</h3>
+  {!isOtpVerified ? (
+    <>
+      <input
+        type="text"
+        className="reset-input"
+        placeholder="Enter OTP"
+        value={enteredOtp}
+        onChange={(e) => setEnteredOtp(e.target.value)}
+        required
+      />
+      <button className="reset-button" onClick={handleOtpSubmit}>
+        Verify OTP
+      </button>
+    </>
+  ) : (
+    <>
+      <input
+        type="password"
+        className="reset-input"
+        placeholder="New Password"
+        value={newPassword}
+        onChange={(e) => setNewPassword(e.target.value)}
+        required
+      />
+      <input
+        type="password"
+        className="reset-input"
+        placeholder="Confirm Password"
+        value={confirmPassword}
+        onChange={(e) => setConfirmPassword(e.target.value)}
+        required
+      />
+      <button className="reset-button" onClick={handleResetPassword}>
+        Reset Password
+      </button>
+    </>
+  )}
+</div>
+
         )}
 
         <Link to="/" className="back-link">
