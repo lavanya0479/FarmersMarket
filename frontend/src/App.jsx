@@ -7,7 +7,6 @@ import FarmerReg from "./pages/farmers/FarmerReg.jsx";   // Farmer registration 
 import AdminLogin from "./pages/admin/AdminLogin.jsx";   // Admin login page
 import Home from "./pages/Home.jsx"; // Home page
 
-
 const App = () => {
   return (
     <Router>
